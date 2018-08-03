@@ -15,8 +15,6 @@ import Login from 'components/Login';
 import Nav from 'components/Nav';
 import Footer from 'components/Footer';
 
-import 'index.css';
-
 // const login_point = process.env.REACT_APP_LOGIN_POINT || 'URL of server side auth'
 
 
