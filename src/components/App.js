@@ -17,7 +17,6 @@ import Footer from 'components/Footer';
 
 // const login_point = process.env.REACT_APP_LOGIN_POINT || 'URL of server side auth'
 
-
 class App extends Component {
 
   constructor(props) {
