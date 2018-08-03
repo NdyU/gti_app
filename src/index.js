@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-// import registerServiceWorker from './registerServiceWorker';
+import Root from 'Roots';
+import App from 'components/App';
+// import Login from 'components/Login';
+// import Nav from 'components/Nav';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-// registerServiceWorker();
+import 'index.css';
+
+ReactDOM.render(
+    <Root>
+      <App/>
+    </Root>
+  , document.getElementById('root'));
