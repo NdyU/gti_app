@@ -11,7 +11,7 @@ import Admin from 'components/Admin';
 import Page_404 from 'components/Util/Page_404';
 import populateUser from 'components/PopulateStates/populateUser';
 import Login from 'components/Login';
-
+import WelcomePage from 'components/WelcomePage';
 import Nav from 'components/Nav';
 import Footer from 'components/Footer';
 
@@ -48,10 +48,11 @@ class App extends Component {
     return (
       <Router>
         <div>
+          <Route path='/' exact component={ WelcomePage }/>
           <Nav />
           <Route path='/login/:token' component={Login}/>
           <Switch>
-            <Route path='/' exact component={ HomePage }/>
+            <Route path='/home' exact component={ HomePage }/>
             <Route path='/community/:community_name' component={ Community }/>
             { authorizedUser &&
               <Route path='/admin' component={ Admin }/>

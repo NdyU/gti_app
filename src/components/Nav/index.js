@@ -18,13 +18,14 @@ class Nav extends Component {
   }
 
   renderLogin = () => {
+    const loginEndPoint = process.env.REACT_APP_LOGIN_POINT;
     return(
       <div>
-        <a href='http://localhost:3001/login'>Login</a>
+        <a href="loginEndPoint">Login</a>
       </div>
     )
   }
-  
+
   renderUserInfo = () => {
     if(this.props.user.authenticated) {
       var user = this.props.user;

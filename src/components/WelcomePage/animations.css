@@ -1,0 +1,38 @@
+.right-arrow {
+  animation-name: slide-right;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.left-arrow {
+  animation-name: slide-left;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+/*defining keyframes animation*/
+@keyframes slide-right {
+  40% {
+    transform: translateX(50px);
+  }
+}
+/*defining keyframes animation*/
+@keyframes slide-left {
+  40% {
+    transform: translateX(-50px);
+  }
+}
+#hGgFQL2Vd {
+  fill: white;
+}
+#hGgFQL2Vd:hover {
+
+  animation-name: changeColor;
+  animation-duration: 1s;
+}
+
+@@keyframes changeColor {
+  50% {
+    fill: #83d0f2 !important;
+  }
+}
