@@ -21,7 +21,7 @@ class Nav extends Component {
     const loginEndPoint = process.env.REACT_APP_LOGIN_POINT;
     return(
       <div>
-        <a href="loginEndPoint">Login</a>
+        <a href={loginEndPoint}>Login</a>
       </div>
     )
   }
