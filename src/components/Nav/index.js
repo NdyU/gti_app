@@ -43,7 +43,7 @@ class Nav extends Component {
       <NavContainer>
         <NavSecondContainer>
           <LogoContainer>
-            <LogoLink href='/'>
+            <LogoLink href='/home'>
               GTI
             </LogoLink>
           </LogoContainer>
