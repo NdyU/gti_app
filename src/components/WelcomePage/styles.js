@@ -7,12 +7,12 @@ export const WelcomePageContainer = styled.div`
   height: 100%;
   width: 100%;
   position: absolute;
-
   background-color: #3E3434;
   ${'' /* background-image: url("https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif");
   background-repeat: no-repeat;
   background-clip: border-box;
   background-size: cover */}
+  z-index: 2;
 `
 export const LinkText = styled.a`
 

@@ -48,10 +48,10 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Route path='/' exact component={ WelcomePage }/>
           <Nav />
           <Route path='/login/:token' component={Login}/>
           <Switch>
+            <Route path='/' exact component={ WelcomePage }/>
             <Route path='/home' exact component={ HomePage }/>
             <Route path='/community/:community_name' component={ Community }/>
             { authorizedUser &&
@@ -59,7 +59,7 @@ class App extends Component {
             }
             <Route component={Page_404}/>
           </Switch>
-          <Footer />
+          <Footer/>
         </div>
       </Router>
     )
